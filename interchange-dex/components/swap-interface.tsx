@@ -455,7 +455,7 @@ export default function SwapInterface() {
               : "bg-gradient-to-r from-purple-600 to-blue-600",
           )}
           disabled={isSwapDisabled}
-          onClick={isConnected ? () => handleSwap : () => {}}
+          onClick={isConnected ? handleSwap : () => {}}
         >
           {!isConnected ? (
             "Connect Wallet"
